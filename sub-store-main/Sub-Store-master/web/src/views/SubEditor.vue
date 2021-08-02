@@ -180,7 +180,7 @@
               class="mt-0 mb-0"
               dense
           >
-            hybrid
+            HYBRID
             <v-row>
               <v-col>
                 <v-radio label="默认" value="DEFAULT"/>
