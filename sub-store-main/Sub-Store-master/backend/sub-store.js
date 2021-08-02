@@ -1814,6 +1814,7 @@ var ProxyUtils = (function () {
                     password: params.password,
                     tfo: JSON.parse(params.tfo || "false"),
                     udp: JSON.parse(params["udp-relay"] || "false"),
+                    hybrid: JSON.parse(params.hybrid || "false"),
                 };
                 // handle obfs
                 if (params.obfs) {
@@ -1848,6 +1849,7 @@ var ProxyUtils = (function () {
                     cipher: "none", // surge does not have this field
                     tls: JSON.parse(params.tls || "false"),
                     tfo: JSON.parse(params.tfo || "false"),
+                    hybrid: JSON.parse(params.hybrid || "false"),
                 };
                 if (proxy.tls) {
                     if (typeof params["skip-cert-verify"] !== "undefined") {
@@ -1889,6 +1891,7 @@ var ProxyUtils = (function () {
                     password: params.password,
                     sni: params.sni || params.server,
                     tfo: JSON.parse(params.tfo || "false"),
+                    hybrid: JSON.parse(params.hybrid || "false"),
                 };
                 if (typeof params["skip-cert-verify"] !== "undefined") {
                     proxy["skip-cert-verify"] =
@@ -1917,6 +1920,7 @@ var ProxyUtils = (function () {
                     port: params.port,
                     tls: JSON.parse(params.tls || "false"),
                     tfo: JSON.parse(params.tfo || "false"),
+                    hybrid: JSON.parse(params.hybrid || "false"),
                 };
                 if (proxy.tls) {
                     if (typeof params["skip-cert-verify"] !== "undefined") {

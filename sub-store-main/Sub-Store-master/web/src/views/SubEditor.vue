@@ -414,7 +414,7 @@ export default {
         });
       }
       // udp, tfo, scert
-      for (const opt of ['udp', 'tfo', 'skip-cert-verify']) {
+      for (const opt of ['udp', 'tfo', 'skip-cert-verify', 'hybrid']) {
         if (this.options[opt] !== 'DEFAULT') {
           output.process.push({
             type: "Set Property Operator",
